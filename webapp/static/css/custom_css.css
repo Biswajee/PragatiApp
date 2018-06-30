@@ -112,18 +112,10 @@ body {
   font-weight: lighter;
 }
 
-.iphone-banner {
-  background-image: url("../images/slide1.jpg");
-}
-
 .red {
   color: red !important;
 }
 
 .blue {
   color: blue !important;
-}
-
-.margin-fix {
-  margin-bottom: -10px;
 }

@@ -14,6 +14,7 @@
     <link href="{% static 'css/materialize.min.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="{% static 'css/bootstrap.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="{% static 'css/custom_css.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway|Roboto" rel="stylesheet">
     <!--@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway|Roboto');-->
 
@@ -29,6 +30,12 @@
             height: 100%;
             margin: 0;
         }
+        
+        .margin-fix {
+          margin-bottom: -10px;
+        }
+
+
     </style>
 
 </head>
@@ -45,7 +52,7 @@
     </ul>
     <nav class="transparent navbar-fixed-top" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" href="#" class="brand-logo"><img src="static/images/fav_icon.png" style="height: 60px; width:60px;" /> <span class="logo-text">Pragati</span></a>
+            <a id="logo-container" href="#" class="brand-logo"><img src="{% static 'images/fav_icon.png' %}" style="height: 60px; width:60px;" /> <span class="logo-text">Pragati</span></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Volunteer Now</a></li>
@@ -55,7 +62,7 @@
         </div>
     </nav>
 
-    <div class="row parallax-window pad pad-down" data-parallax="scroll" data-image-src="static/images/44261.jpg">
+    <div class="row parallax-window pad pad-down" data-parallax="scroll" data-image-src="{% static 'images/44261.jpg' %}">
         <div class="col-md-12 col-sm-12 text-center">
             <h1 class="head-banner-text light-green-text text-accent-3 small-pad">Pragati | A needy's new hope</h1>
             <h5 class="col s12 light banner-text text-white">Pragati is an initiative to facilitate NGOs serve the needy effectively and efficiently. <br /> Now, use your phone to order food for the needy with no cost.<br /> So, why wait to do this wonderful deed !
@@ -113,7 +120,7 @@
     </div>
 
 
-    <div class="row parallax-window pad pad-down" data-parallax="scroll" data-image-src="static/images/1375.jpg">
+    <div class="row parallax-window pad pad-down" data-parallax="scroll" data-image-src="{% static 'images/1375.jpg' %}">
         <div class="col-m-12 col-sm-12 pad text-center pad-down">
             <h5 class="head-banner-text col s12 light-green-text text-accent-3">Had a party at home, today ? Give us a missed call or fill a form <a style="color: #6cef26;" href="#">here</a> !</h5>
         </div>
@@ -126,7 +133,7 @@
         <div class="col-md-6 col-sm-6 text-center pad-extra">
             <h2 class="banner-text">Give us a missed call on 088888 88888 and we will call you</h2>
             <video width="300" height="200" id="1127" autoplay loop muted>
-        <source src="static/images/1127.mp4" />
+        <source src="{% static 'images/1127.mp4' %}" />
         Sorry, your browser doesn't support embedded videos.
       </video>
         </div>
@@ -158,7 +165,7 @@
         </div>
     </div>
 
-    <div class="row parallax-window pad margin-fix" data-parallax="scroll" data-image-src="static/images/1920.jpg">
+    <div class="row parallax-window pad margin-fix" data-parallax="scroll" data-image-src="{% static 'images/1920.jpg' %}">
         <div class="col-md-12 col-sm-12 text-center pad-down">
             <h1 class="head-banner-text pad-extra white-text">Together, we can make a difference !</h1>
         </div>
@@ -190,10 +197,10 @@
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="{ % static 'js/materialize.min.js' % }"></script>
-    <script src="{ % static 'js/bootstrap.js' % }"></script>
+    <script src="{% static 'js/materialize.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
     <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
-    <script src="{ % static 'js/parallax.min.js' % }"></script>
-    <script src="{ % static 'js/init.js' % }"></script>
+    <script src="{% static 'js/parallax.min.js' %}"></script>
+    <script src="{% static 'js/init.js' %}"></script>
 </body>
 </html>
