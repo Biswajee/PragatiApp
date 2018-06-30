@@ -25,7 +25,9 @@ SECRET_KEY = '=!ga*dn0f*d=x5-ajn0993@tu7w=y12z4f^35od3b=aq0_p5aq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pragati.herokuapp.com',
+                 '127.0.0.1'
+                 ]
 
 
 # Application definition
