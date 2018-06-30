@@ -1,4 +1,5 @@
-<!DOCTYPE html> {% load staticfiles %}
+<!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 
 <head>
@@ -9,11 +10,10 @@
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="static/css/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="static/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="static/css/bootstrap.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="static/css/custom_css.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="{% static 'css/font-awesome-4.7.0/css/font-awesome.min.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="{% static 'css/materialize.min.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="{% static 'css/bootstrap.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway|Roboto" rel="stylesheet">
     <!--@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Raleway|Roboto');-->
 
@@ -23,7 +23,7 @@
             max-width: 100%;
             overflow-x: hidden;
         }
-        
+
         html,
         body {
             height: 100%;
@@ -190,11 +190,10 @@
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="static/js/materialize.min.js"></script>
-    <script src="static/js/bootstrap.js"></script>
+    <script src="{ % static 'js/materialize.min.js' % }"></script>
+    <script src="{ % static 'js/bootstrap.js' % }"></script>
     <script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
-    <script src="static/js/parallax.min.js"></script>
-    <script src="static/js/init.js"></script>
+    <script src="{ % static 'js/parallax.min.js' % }"></script>
+    <script src="{ % static 'js/init.js' % }"></script>
 </body>
-
 </html>
